@@ -1,11 +1,12 @@
 'use strict';
-const tgConfig = require('tg-config');
+const tgConfig = require('tg-node-lib/lib/tg-config');
 
 exports.handler = function(event, context, callback) {
     var res;
     if (typeof event.key === 'undefined') {
         // grab the whole table
         res = tgConfig.getAllConfig();
+        console.log(res);
         callback(res[0], res[1]);
         // dynamodb.scan({
         //     TableName: 'TokenGoodsConfig'
@@ -23,6 +24,7 @@ exports.handler = function(event, context, callback) {
     } else {
         // grab just a single key
         res = tgConfig.getConfig(event.key);
+        console.log(res);
         callback(res[0], res[1]);
         // dynamodb.getItem({
         //     Key: {
