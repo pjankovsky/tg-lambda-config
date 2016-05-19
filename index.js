@@ -40,6 +40,6 @@ exports.handler = function(event, context, callback) {
         //         else
         //             callback(null, data.Item.value.S);
         //     }
-        });
+        // });
     }
 };
