@@ -1,5 +1,5 @@
 'use strict';
-const tgConfig = require('tg-node-lib/lib/tg-config');
+let tgConfig = require('tg-node-lib/lib/tg-config');
 
 exports.handler = function(event, context, callback) {
     if (typeof event.key === 'undefined') {
