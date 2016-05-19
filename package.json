@@ -3,8 +3,19 @@
   "version": "1.0.0",
   "description": "Lambda function to pull config values from DynamoDb",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjankovsky/tg-lambda-config.git"
+  },
   "author": "Peter Jankovsky <peter@jankovsky.me>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pjankovsky/tg-lambda-config/issues"
+  },
+  "homepage": "https://github.com/pjankovsky/tg-lambda-config#readme",
   "dependencies": {
     "aws-sdk": "^2.3.9",
     "tg-node-lib": "pjankovsky/tg-node-lib.git"
